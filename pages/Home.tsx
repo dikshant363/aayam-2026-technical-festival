@@ -135,27 +135,27 @@ const Home: React.FC = () => {
         </div>
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-80 hover:opacity-100 transition-opacity duration-300">
           {/* Logo 1 - Uploaded Image */}
-          <div className="w-32 h-16 bg-white rounded shadow-sm flex items-center justify-center p-2 border border-gray-100 transform hover:scale-105 transition-transform">
+          <div className="w-56 h-32 bg-white rounded-lg shadow-md flex items-center justify-center p-4 border border-gray-100 transform hover:scale-105 transition-transform">
             <img src="/assets/images/sponsor-1.jpg" alt="Sponsor 1" className="max-w-full max-h-full object-contain" />
           </div>
           {/* Logo 2 - Uploaded Image */}
-          <div className="w-32 h-16 bg-white rounded shadow-sm flex items-center justify-center p-2 border border-gray-100 transform hover:scale-105 transition-transform">
+          <div className="w-56 h-32 bg-white rounded-lg shadow-md flex items-center justify-center p-4 border border-gray-100 transform hover:scale-105 transition-transform">
             <img src="/assets/images/sponsor-2.jpg" alt="Sponsor 2" className="max-w-full max-h-full object-contain" />
           </div>
           {/* Logo 3 - Uploaded Image */}
-          <div className="w-32 h-16 bg-white rounded shadow-sm flex items-center justify-center p-2 border border-gray-100 transform hover:scale-105 transition-transform">
+          <div className="w-56 h-32 bg-white rounded-lg shadow-md flex items-center justify-center p-4 border border-gray-100 transform hover:scale-105 transition-transform">
             <img src="/assets/images/sponsor-3.jpg" alt="Sponsor 3" className="max-w-full max-h-full object-contain" />
           </div>
           {/* Logo 4 - Uploaded Image */}
-          <div className="w-32 h-16 bg-white rounded shadow-sm flex items-center justify-center p-2 border border-gray-100 transform hover:scale-105 transition-transform">
+          <div className="w-56 h-32 bg-white rounded-lg shadow-md flex items-center justify-center p-4 border border-gray-100 transform hover:scale-105 transition-transform">
             <img src="/assets/images/sponsor-4.jpg" alt="Sponsor 4" className="max-w-full max-h-full object-contain" />
           </div>
           {/* Logo 5 - Uploaded Image */}
-          <div className="w-32 h-16 bg-white rounded shadow-sm flex items-center justify-center p-2 border border-gray-100 transform hover:scale-105 transition-transform">
+          <div className="w-56 h-32 bg-white rounded-lg shadow-md flex items-center justify-center p-4 border border-gray-100 transform hover:scale-105 transition-transform">
             <img src="/assets/images/sponsor-5.jpg" alt="Sponsor 5" className="max-w-full max-h-full object-contain" />
           </div>
           {/* Logo 6 - Uploaded Image */}
-          <div className="w-32 h-16 bg-white rounded shadow-sm flex items-center justify-center p-2 border border-gray-100 transform hover:scale-105 transition-transform">
+          <div className="w-56 h-32 bg-white rounded-lg shadow-md flex items-center justify-center p-4 border border-gray-100 transform hover:scale-105 transition-transform">
             <img src="/assets/images/sponsor-6.png" alt="Sponsor 6" className="max-w-full max-h-full object-contain" />
           </div>
         </div>
