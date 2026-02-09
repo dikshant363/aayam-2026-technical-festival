@@ -60,9 +60,8 @@ const Layout: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20">
             <div className="flex items-center">
-              <NavLink to="/" className="flex-shrink-0 flex flex-col items-center justify-center">
+              <NavLink to="/" className="flex-shrink-0 flex items-center justify-center">
                 <img src="/assets/images/aayam-logo-full.png" alt="Aayam Logo" className="h-20 w-auto object-contain" />
-                <span className="text-sm text-black tracking-widest font-bold mt-1">2026</span>
               </NavLink>
             </div>
 
