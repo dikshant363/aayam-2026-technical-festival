@@ -61,8 +61,8 @@ const Layout: React.FC = () => {
           <div className="flex justify-between h-20">
             <div className="flex items-center">
               <NavLink to="/" className="flex-shrink-0 flex items-center">
-                <img src="/assets/images/bmu-logo.png" alt="BMU Logo" className="w-10 h-10 object-contain mr-3" />
-                <img src="/assets/images/logo-icon.jpg" alt="Aayam Logo" className="w-10 h-10 rounded-lg object-contain mr-2" />
+                <img src="/assets/images/bmu-logo.png" alt="BMU Logo" className="h-10 w-auto object-contain mr-3" />
+                <img src="/assets/images/aayam-logo-full.png" alt="Aayam Logo" className="h-14 w-auto object-contain mr-2" />
                 <div>
                   <span className="font-heading font-bold text-2xl text-primary block leading-none">AAYAM</span>
                   <span className="text-xs text-secondary tracking-widest font-semibold">2026</span>
