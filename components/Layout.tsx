@@ -61,16 +61,14 @@ const Layout: React.FC = () => {
           <div className="flex justify-between h-20">
             <div className="flex items-center">
               <NavLink to="/" className="flex-shrink-0 flex items-center">
-                 <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-heading font-bold text-xl mr-2">
-                   A
-                 </div>
-                 <div>
-                   <span className="font-heading font-bold text-2xl text-primary block leading-none">AAYAM</span>
-                   <span className="text-xs text-secondary tracking-widest font-semibold">2026</span>
-                 </div>
+                <img src="/assets/images/logo-icon.jpg" alt="Aayam Logo" className="w-10 h-10 rounded-lg object-contain mr-2" />
+                <div>
+                  <span className="font-heading font-bold text-2xl text-primary block leading-none">AAYAM</span>
+                  <span className="text-xs text-secondary tracking-widest font-semibold">2026</span>
+                </div>
               </NavLink>
             </div>
-            
+
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center space-x-6">
               {NAV_ITEMS.map((item) => (
@@ -78,8 +76,7 @@ const Layout: React.FC = () => {
                   key={item.path}
                   to={item.path}
                   className={({ isActive }) =>
-                    `px-3 py-2 rounded-md text-sm font-semibold transition-colors ${
-                      isActive ? 'text-secondary' : 'text-gray-600 hover:text-primary'
+                    `px-3 py-2 rounded-md text-sm font-semibold transition-colors ${isActive ? 'text-secondary' : 'text-gray-600 hover:text-primary'
                     }`
                   }
                 >
@@ -112,8 +109,7 @@ const Layout: React.FC = () => {
                   key={item.path}
                   to={item.path}
                   className={({ isActive }) =>
-                    `block px-3 py-4 rounded-md text-base font-medium border-b border-gray-50 ${
-                      isActive ? 'text-secondary bg-gray-50' : 'text-gray-700 hover:text-primary hover:bg-gray-50'
+                    `block px-3 py-4 rounded-md text-base font-medium border-b border-gray-50 ${isActive ? 'text-secondary bg-gray-50' : 'text-gray-700 hover:text-primary hover:bg-gray-50'
                     }`
                   }
                 >
@@ -177,7 +173,7 @@ const Layout: React.FC = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="mt-1 mr-3 flex-shrink-0 text-secondary">📍</span>
-                  <span>BMEF Campus, VIP Road,<br/>Vesu, Surat-395017</span>
+                  <span>BMEF Campus, VIP Road,<br />Vesu, Surat-395017</span>
                 </li>
               </ul>
             </div>
@@ -185,19 +181,19 @@ const Layout: React.FC = () => {
             <div>
               <h3 className="text-lg font-bold mb-6 border-b-2 border-secondary inline-block pb-1">Location</h3>
               <div className="w-full h-32 bg-gray-800 rounded-lg overflow-hidden">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.298286950346!2d72.77977431493457!3d21.14048598593802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0527375e25223%3A0x6758801264c3971!2sBhagwan%20Mahavir%20University!5e0!3m2!1sen!2sin!4v1677834567890!5m2!1sen!2sin" 
-                  width="100%" 
-                  height="100%" 
-                  style={{border:0}} 
-                  allowFullScreen 
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.298286950346!2d72.77977431493457!3d21.14048598593802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0527375e25223%3A0x6758801264c3971!2sBhagwan%20Mahavir%20University!5e0!3m2!1sen!2sin!4v1677834567890!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
                   loading="lazy"
                   title="BMU Location"
                 ></iframe>
               </div>
             </div>
           </div>
-          
+
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
             <p>&copy; 2026 AAYAM Technical Festival. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
@@ -209,9 +205,9 @@ const Layout: React.FC = () => {
       </footer>
 
       {/* Floating WhatsApp Button */}
-      <a 
-        href="https://wa.me/918732991144" 
-        target="_blank" 
+      <a
+        href="https://wa.me/918732991144"
+        target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-[#128C7E] transition-all z-50 hover:scale-110 flex items-center justify-center"
         aria-label="Contact on WhatsApp"
