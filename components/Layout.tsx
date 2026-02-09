@@ -134,8 +134,8 @@ const Layout: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center mb-4">
-                <div className="w-8 h-8 bg-white rounded flex items-center justify-center text-primary font-bold mr-2">A</div>
-                <span className="text-xl font-bold">AAYAM 2026</span>
+                <img src="/assets/images/aayam-logo-footer.png" alt="Aayam Logo" className="h-12 w-auto object-contain mr-2 bg-white rounded p-1" />
+                <span className="text-xl font-bold">2026</span>
               </div>
               <p className="text-gray-400 text-sm mb-6 leading-relaxed">
                 The biggest technical festival of South Gujarat, bringing together innovation, talent, and technology under one roof.
