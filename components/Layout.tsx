@@ -135,7 +135,7 @@ const Layout: React.FC = () => {
             <div>
               <div className="flex items-center mb-4">
                 <img src="/assets/images/aayam-logo-footer.png" alt="Aayam Logo" className="h-12 w-auto object-contain mr-2 bg-white rounded p-1" />
-                <span className="text-xl font-bold">2026</span>
+                <span className="text-xl font-bold">AAYAM 2026</span>
               </div>
               <p className="text-gray-400 text-sm mb-6 leading-relaxed">
                 The biggest technical festival of South Gujarat, bringing together innovation, talent, and technology under one roof.
