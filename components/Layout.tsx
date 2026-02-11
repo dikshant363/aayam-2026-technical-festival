@@ -141,9 +141,8 @@ const Layout: React.FC = () => {
                 The biggest technical festival of South Gujarat, bringing together innovation, talent, and technology under one roof.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors"><Instagram size={18} /></a>
+                <a href="https://www.instagram.com/aayam2k26/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors"><Instagram size={18} /></a>
                 <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors"><Facebook size={18} /></a>
-                <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors"><Linkedin size={18} /></a>
               </div>
             </div>
 
