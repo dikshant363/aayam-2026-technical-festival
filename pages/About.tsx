@@ -7,11 +7,11 @@ import { Target, Lightbulb, TrendingUp, Users } from 'lucide-react';
 const About: React.FC = () => {
   return (
     <div>
-      <SEO 
-        title="About Us" 
-        description="Learn about the legacy of AAYAM, the mission of Bhagwan Mahavir University, and why you should partner with us for AAYAM 2026." 
+      <SEO
+        title="About Us"
+        description="Learn about the legacy of AAYAM, the mission of Bhagwan Mahavir University, and why you should partner with us for AAYAM 2026."
       />
-      
+
       <div className="bg-primary text-white py-20 text-center">
         <h1 className="text-4xl font-heading font-bold mb-4">About AAYAM</h1>
         <p className="text-xl opacity-90">Celebrating a Decade of Innovation and Excellence</p>
@@ -22,18 +22,18 @@ const About: React.FC = () => {
           <div>
             <h2 className="text-3xl font-bold text-primary mb-6">About Faculty of Engineering, BMU</h2>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              Bhagwan Mahavir University (BMU) is committed to inclusion and innovation in education. 
-              The Faculty of Engineering is the flagship department, nurturing thousands of engineers 
+              Bhagwan Mahavir University (BMU) is committed to inclusion and innovation in education.
+              The Faculty of Engineering is the flagship department, nurturing thousands of engineers
               who contribute to the nation's technological growth.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              With state-of-the-art laboratories and industry-aligned curriculum, we focus on 
+              With state-of-the-art laboratories and industry-aligned curriculum, we focus on
               practical learning and holistic development of our students.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <img src="https://picsum.photos/seed/college1/400/300" className="rounded-lg shadow-md w-full h-48 object-cover" alt="Campus Building 1" loading="lazy" />
-            <img src="https://picsum.photos/seed/college2/400/300" className="rounded-lg shadow-md w-full h-48 object-cover mt-8" alt="Campus Building 2" loading="lazy" />
+            <img src="/assets/images/gallery-1.jpg" className="rounded-lg shadow-md w-full h-48 object-cover" alt="Inauguration Ceremony" loading="lazy" />
+            <img src="/assets/images/gallery-2.jpg" className="rounded-lg shadow-md w-full h-48 object-cover mt-8" alt="Ribbon Cutting Ceremony" loading="lazy" />
           </div>
         </div>
       </Section>
@@ -50,7 +50,7 @@ const About: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-4">Vision</h3>
               <p className="text-gray-600">
-                To be a premier platform that bridges the gap between academic learning and industrial application, 
+                To be a premier platform that bridges the gap between academic learning and industrial application,
                 fostering a culture of innovation among youth.
               </p>
             </div>
@@ -60,7 +60,7 @@ const About: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-4">Mission</h3>
               <p className="text-gray-600">
-                To organize world-class technical events that challenge students, encourage teamwork, 
+                To organize world-class technical events that challenge students, encourage teamwork,
                 and provide industry exposure through sponsorship and mentorship.
               </p>
             </div>
