@@ -31,8 +31,8 @@ const Events: React.FC = () => {
   const filteredEvents = useMemo(() => {
     return EVENTS_LIST.filter(event => {
       const matchesCategory = activeCategory === 'All' || event.category === activeCategory;
-      const matchesSearch = event.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
-                            event.description.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchesSearch = event.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        event.description.toLowerCase().includes(searchTerm.toLowerCase());
       return matchesCategory && matchesSearch;
     });
   }, [activeCategory, searchTerm]);
@@ -44,9 +44,9 @@ const Events: React.FC = () => {
 
   return (
     <div>
-      <SEO 
-        title="Events" 
-        description="Discover over 20+ technical and non-technical events at AAYAM 2026. From Hackathons to Robo Wars, we have it all." 
+      <SEO
+        title="Events"
+        description="Discover over 20+ technical and non-technical events at AAYAM 2026. From Hackathons to Robo Wars, we have it all."
       />
 
       <div className="bg-primary text-white py-20 text-center relative overflow-hidden">
@@ -63,7 +63,7 @@ const Events: React.FC = () => {
         {/* Filter & Search Bar */}
         <div className="sticky top-20 z-30 bg-white/95 backdrop-blur-sm py-4 border-b border-gray-100 mb-8 -mx-4 px-4 shadow-sm md:static md:shadow-none md:border-0 md:bg-transparent">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            
+
             {/* Search Input */}
             <div className="relative w-full md:w-80">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -77,7 +77,7 @@ const Events: React.FC = () => {
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
               {searchTerm && (
-                <button 
+                <button
                   onClick={() => setSearchTerm('')}
                   className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-gray-600"
                 >
@@ -92,11 +92,10 @@ const Events: React.FC = () => {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all transform hover:-translate-y-0.5 ${
-                    activeCategory === cat 
-                      ? 'bg-secondary text-white shadow-md scale-105' 
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all transform hover:-translate-y-0.5 ${activeCategory === cat
+                      ? 'bg-secondary text-white shadow-md scale-105'
                       : 'bg-white text-gray-600 border border-gray-200 hover:bg-gray-50 hover:border-gray-300'
-                  }`}
+                    }`}
                 >
                   {cat}
                 </button>
@@ -105,22 +104,21 @@ const Events: React.FC = () => {
 
             {/* Category Filters (Mobile Scrollable) */}
             <div className="flex md:hidden w-full overflow-x-auto pb-2 space-x-2 scrollbar-hide">
-               {CATEGORIES.map(cat => (
-                 <button
+              {CATEGORIES.map(cat => (
+                <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors flex-shrink-0 ${
-                    activeCategory === cat 
-                      ? 'bg-secondary text-white shadow-md' 
+                  className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors flex-shrink-0 ${activeCategory === cat
+                      ? 'bg-secondary text-white shadow-md'
                       : 'bg-white text-gray-600 border border-gray-200 hover:bg-gray-50'
-                  }`}
-                 >
-                   {cat}
-                 </button>
-               ))}
+                    }`}
+                >
+                  {cat}
+                </button>
+              ))}
             </div>
           </div>
-          
+
           {/* Active Filter Summary */}
           {(activeCategory !== 'All' || searchTerm) && (
             <div className="flex items-center mt-4 text-sm text-gray-500">
@@ -135,7 +133,7 @@ const Events: React.FC = () => {
         </div>
 
         {/* Events Grid */}
-        <motion.div 
+        <motion.div
           layout
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
         >
@@ -148,42 +146,27 @@ const Events: React.FC = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3 }}
-                  key={event.id} 
+                  key={event.id}
                   className="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100 flex flex-col h-full"
                 >
-                  <div className="h-56 overflow-hidden relative">
-                    <div className="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary z-10 flex items-center shadow-sm">
-                      <CategoryIcon category={event.category} className="w-3 h-3 mr-1" />
-                      {event.category}
-                    </div>
-                    <img 
-                      src={event.image} 
-                      alt={event.title} 
-                      loading="lazy"
-                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
-                  </div>
-                  
                   <div className="p-6 flex-grow flex flex-col">
+                    <div className="flex items-center gap-2 mb-3">
+                      <div className="bg-primary/10 px-3 py-1 rounded-full text-xs font-bold text-primary flex items-center shadow-sm">
+                        <CategoryIcon category={event.category} className="w-3 h-3 mr-1" />
+                        {event.category}
+                      </div>
+                    </div>
                     <h3 className="font-heading font-bold text-xl mb-3 text-gray-800 group-hover:text-primary transition-colors">
                       {event.title}
                     </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
+                    <p className="text-gray-600 text-sm leading-relaxed flex-grow">
                       {event.description}
                     </p>
-                    
-                    <div className="mt-auto pt-4 border-t border-gray-50">
-                      <button className="w-full py-2.5 px-4 bg-gray-50 text-gray-700 font-semibold rounded-lg hover:bg-primary hover:text-white transition-all duration-300 flex items-center justify-center text-sm group-hover:shadow-md">
-                        <Info size={16} className="mr-2" />
-                        Learn More
-                      </button>
-                    </div>
                   </div>
                 </motion.div>
               ))
             ) : (
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 className="col-span-full text-center py-24 text-gray-400 flex flex-col items-center justify-center"
@@ -195,7 +178,7 @@ const Events: React.FC = () => {
                 <p className="text-gray-500 max-w-md mx-auto mb-6">
                   We couldn't find any events matching your current filters. Try adjusting your search or category.
                 </p>
-                <button 
+                <button
                   onClick={clearFilters}
                   className="px-6 py-2 bg-primary text-white rounded-full hover:bg-blue-700 transition-colors"
                 >
