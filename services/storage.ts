@@ -61,6 +61,10 @@ export const storageService = {
     localStorage.setItem(APP_KEY, JSON.stringify(updated));
   },
 
+  deleteAllApplications: () => {
+    localStorage.setItem(APP_KEY, JSON.stringify([]));
+  },
+
   // Messages
   saveMessage: (msg: Omit<ContactMessage, 'id' | 'timestamp' | 'status'>) => {
     const msgs = storageService.getMessages();
