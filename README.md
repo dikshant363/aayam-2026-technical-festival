@@ -5,6 +5,9 @@ Official sponsorship and event portal for AAYAM 2026 Technical Festival organize
 
 ## Project Overview
 
+- **Live Demo:** [https://aayam-2026-technical-festival.netlify.app/](https://aayam-2026-technical-festival.netlify.app/)
+- **Repository:** [https://github.com/dikshant363/aayam-2026-technical-festival](https://github.com/dikshant363/aayam-2026-technical-festival)
+
 AAYAM is the annual national-level technical festival featuring 20+ events across various engineering domains. This web application facilitates:
 
 - Event showcasing and information.

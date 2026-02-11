@@ -58,7 +58,7 @@ const Contact: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Validate all fields
     const newErrors: Record<string, string> = {};
     Object.keys(formData).forEach(key => {
@@ -90,9 +90,9 @@ const Contact: React.FC = () => {
 
   return (
     <div>
-      <SEO 
-        title="Contact Us" 
-        description="Get in touch with the AAYAM 2026 team. Find our office address, email, and phone number." 
+      <SEO
+        title="Contact Us"
+        description="Get in touch with the AAYAM 2026 team. Find our office address, email, and phone number."
       />
 
       <div className="bg-primary text-white py-16 text-center">
@@ -106,13 +106,13 @@ const Contact: React.FC = () => {
           <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 order-2 lg:order-1">
             <h2 className="text-2xl font-bold text-gray-900 mb-2">Send us a Message</h2>
             <p className="text-gray-500 mb-6">Fill out the form below and we'll respond within 24 hours.</p>
-            
+
             {submitStatus === 'success' ? (
               <div className="bg-green-50 border border-green-200 text-green-800 p-8 rounded-lg text-center h-full flex flex-col justify-center items-center animate-fade-in">
                 <CheckCircle className="h-16 w-16 text-green-500 mb-4" />
                 <h3 className="text-xl font-bold mb-2">Message Sent Successfully!</h3>
                 <p className="mb-6">Thank you for reaching out. Our team will get back to you shortly.</p>
-                <button 
+                <button
                   onClick={() => setSubmitStatus('idle')}
                   className="text-sm font-bold text-primary underline hover:text-blue-800"
                 >
@@ -122,10 +122,10 @@ const Contact: React.FC = () => {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 {submitStatus === 'error' && (
-                   <div className="bg-red-50 text-red-600 p-4 rounded-md flex items-center">
-                     <AlertCircle size={20} className="mr-2" />
-                     <span>Something went wrong. Please try again.</span>
-                   </div>
+                  <div className="bg-red-50 text-red-600 p-4 rounded-md flex items-center">
+                    <AlertCircle size={20} className="mr-2" />
+                    <span>Something went wrong. Please try again.</span>
+                  </div>
                 )}
 
                 <div>
@@ -211,96 +211,96 @@ const Contact: React.FC = () => {
 
           {/* Contact Info Card */}
           <div className="order-1 lg:order-2 space-y-8">
-             <div className="bg-slate-50 p-8 rounded-xl border border-gray-200">
-                <h3 className="text-xl font-bold text-primary mb-6 flex items-center">
-                  <span className="w-1 h-8 bg-secondary mr-3 rounded-full"></span>
-                  Head Office Info
-                </h3>
-                
-                <div className="space-y-6">
-                   <div className="flex">
-                      <div className="flex-shrink-0 mt-1">
-                         <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary shadow-sm border border-gray-100">
-                            <Phone size={18} />
-                         </div>
-                      </div>
-                      <div className="ml-4">
-                         <p className="text-sm text-gray-500 font-semibold uppercase tracking-wide">Sponsorship Head</p>
-                         <p className="font-bold text-gray-900 text-lg">Priyansh Soni</p>
-                         <a href="tel:+918732991144" className="text-primary hover:underline">+91 8732991144</a>
-                      </div>
-                   </div>
+            <div className="bg-slate-50 p-8 rounded-xl border border-gray-200">
+              <h3 className="text-xl font-bold text-primary mb-6 flex items-center">
+                <span className="w-1 h-8 bg-secondary mr-3 rounded-full"></span>
+                Head Office Info
+              </h3>
 
-                   <div className="flex">
-                      <div className="flex-shrink-0 mt-1">
-                         <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary shadow-sm border border-gray-100">
-                            <Mail size={18} />
-                         </div>
-                      </div>
-                      <div className="ml-4">
-                         <p className="text-sm text-gray-500 font-semibold uppercase tracking-wide">Email Us</p>
-                         <a href="mailto:sponsorship@aayam2026.com" className="block text-gray-900 hover:text-primary transition-colors">sponsorship@aayam2026.com</a>
-                         <a href="mailto:info@aayam2026.com" className="block text-gray-600 hover:text-primary transition-colors text-sm">info@aayam2026.com</a>
-                      </div>
-                   </div>
-
-                   <div className="flex">
-                      <div className="flex-shrink-0 mt-1">
-                         <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary shadow-sm border border-gray-100">
-                            <Clock size={18} />
-                         </div>
-                      </div>
-                      <div className="ml-4">
-                         <p className="text-sm text-gray-500 font-semibold uppercase tracking-wide">Office Hours</p>
-                         <p className="text-gray-900">Monday - Saturday</p>
-                         <p className="text-gray-600">9:00 AM - 5:00 PM</p>
-                      </div>
-                   </div>
-
-                   <div className="flex">
-                      <div className="flex-shrink-0 mt-1">
-                         <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary shadow-sm border border-gray-100">
-                            <MapPin size={18} />
-                         </div>
-                      </div>
-                      <div className="ml-4">
-                         <p className="text-sm text-gray-500 font-semibold uppercase tracking-wide">Location</p>
-                         <p className="text-gray-900">Bhagwan Mahavir University</p>
-                         <p className="text-gray-600">BMEF Campus, VIP Road, Vesu,<br/>Surat, Gujarat - 395017</p>
-                         <a 
-                            href="https://goo.gl/maps/XYZ" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="inline-block mt-2 text-sm font-bold text-secondary hover:text-orange-700"
-                         >
-                            Get Directions →
-                         </a>
-                      </div>
-                   </div>
+              <div className="space-y-6">
+                <div className="flex">
+                  <div className="flex-shrink-0 mt-1">
+                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary shadow-sm border border-gray-100">
+                      <Phone size={18} />
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <p className="text-sm text-gray-500 font-semibold uppercase tracking-wide">Sponsorship Head</p>
+                    <p className="font-bold text-gray-900 text-lg">Priyansh Soni</p>
+                    <a href="tel:+918732991144" className="text-primary hover:underline">+91 8732991144</a>
+                  </div>
                 </div>
 
-                <div className="mt-8 pt-8 border-t border-gray-200">
-                   <p className="text-sm text-gray-500 mb-4 font-semibold text-center">Follow Us On Social Media</p>
-                   <div className="flex justify-center space-x-4">
-                      <a href="#" className="w-10 h-10 bg-white text-gray-600 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all shadow-sm"><Instagram size={20} /></a>
-                      <a href="#" className="w-10 h-10 bg-white text-gray-600 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all shadow-sm"><Facebook size={20} /></a>
-                      <a href="#" className="w-10 h-10 bg-white text-gray-600 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all shadow-sm"><Linkedin size={20} /></a>
-                      <a href="#" className="w-10 h-10 bg-white text-gray-600 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all shadow-sm"><Twitter size={20} /></a>
-                   </div>
+                <div className="flex">
+                  <div className="flex-shrink-0 mt-1">
+                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary shadow-sm border border-gray-100">
+                      <Mail size={18} />
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <p className="text-sm text-gray-500 font-semibold uppercase tracking-wide">Email Us</p>
+                    <a href="mailto:sponsorship@aayam2026.com" className="block text-gray-900 hover:text-primary transition-colors">sponsorship@aayam2026.com</a>
+                    <a href="mailto:info@aayam2026.com" className="block text-gray-600 hover:text-primary transition-colors text-sm">info@aayam2026.com</a>
+                  </div>
                 </div>
-             </div>
 
-             {/* Google Map */}
-             <div className="h-64 w-full bg-gray-200 rounded-xl overflow-hidden shadow-md border border-gray-200">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.298286950346!2d72.77977431493457!3d21.14048598593802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0527375e25223%3A0x6758801264c3971!2sBhagwan%20Mahavir%20University!5e0!3m2!1sen!2sin!4v1677834567890!5m2!1sen!2sin" 
-                  width="100%" 
-                  height="100%" 
-                  style={{border:0}} 
-                  allowFullScreen 
-                  loading="lazy"
-                  title="BMU Location Map"
-                ></iframe>
+                <div className="flex">
+                  <div className="flex-shrink-0 mt-1">
+                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary shadow-sm border border-gray-100">
+                      <Clock size={18} />
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <p className="text-sm text-gray-500 font-semibold uppercase tracking-wide">Office Hours</p>
+                    <p className="text-gray-900">Monday - Saturday</p>
+                    <p className="text-gray-600">9:00 AM - 5:00 PM</p>
+                  </div>
+                </div>
+
+                <div className="flex">
+                  <div className="flex-shrink-0 mt-1">
+                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary shadow-sm border border-gray-100">
+                      <MapPin size={18} />
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <p className="text-sm text-gray-500 font-semibold uppercase tracking-wide">Location</p>
+                    <p className="text-gray-900">Bhagwan Mahavir University</p>
+                    <p className="text-gray-600">BMCET Campus, VIP Road, Vesu,<br />Surat, Gujarat - 395017</p>
+                    <a
+                      href="https://maps.app.goo.gl/JSeVPe7gUFwEBPTw6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block mt-2 text-sm font-bold text-secondary hover:text-orange-700"
+                    >
+                      Get Directions →
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 pt-8 border-t border-gray-200">
+                <p className="text-sm text-gray-500 mb-4 font-semibold text-center">Follow Us On Social Media</p>
+                <div className="flex justify-center space-x-4">
+                  <a href="https://www.instagram.com/aayam2k26/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white text-gray-600 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all shadow-sm"><Instagram size={20} /></a>
+                  <a href="#" className="w-10 h-10 bg-white text-gray-600 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all shadow-sm"><Facebook size={20} /></a>
+                  <a href="#" className="w-10 h-10 bg-white text-gray-600 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all shadow-sm"><Linkedin size={20} /></a>
+                  <a href="#" className="w-10 h-10 bg-white text-gray-600 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all shadow-sm"><Twitter size={20} /></a>
+                </div>
+              </div>
+            </div>
+
+            {/* Google Map */}
+            <div className="h-64 w-full bg-gray-200 rounded-xl overflow-hidden shadow-md border border-gray-200">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.298286950346!2d72.77977431493457!3d21.14048598593802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0527375e25223%3A0x6758801264c3971!2sBhagwan%20Mahavir%20University!5e0!3m2!1sen!2sin!4v1677834567890!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                title="BMU Location Map"
+              ></iframe>
             </div>
           </div>
         </div>
