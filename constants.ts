@@ -165,7 +165,7 @@ export const TESTIMONIALS: Testimonial[] = [
 export const FAQS: FaqItem[] = [
   // General
   { id: 'gen1', category: 'General', question: 'What is AAYAM?', answer: 'AAYAM is the annual national-level technical festival organized by the Faculty of Engineering, Bhagwan Mahavir University. It features technical competitions, workshops, and cultural events.' },
-  { id: 'gen2', category: 'General', question: 'When and where is AAYAM 2026?', answer: 'AAYAM 2026 will be held on March 12th and 13th, 2026 at the BMEF Campus, VIP Road, Vesu, Surat.' },
+  { id: 'gen2', category: 'General', question: 'When and where is AAYAM 2026?', answer: 'AAYAM 2026 will be held on March 12th and 13th, 2026 at the BMCET Campus, VIP Road, Vesu, Surat.' },
   { id: 'gen3', category: 'General', question: 'Who can attend?', answer: 'The festival is open to students from all colleges and universities across India. Some events are also open to school students.' },
   { id: 'gen4', category: 'General', question: 'Is registration required?', answer: 'Yes, registration is mandatory for participating in events. Spectators may also need to register for entry passes.' },
   { id: 'gen5', category: 'General', question: 'What events are included?', answer: 'The fest includes 20+ events across categories like Computer/IT, Robotics, Civil, Electrical, Gaming, and Non-Technical fun events.' },

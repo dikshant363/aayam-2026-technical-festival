@@ -45,7 +45,7 @@ const Layout: React.FC = () => {
         <div className="flex items-center space-x-4">
           <span>March 12-13, 2026</span>
           <span>•</span>
-          <span>BMEF Campus, Surat</span>
+          <span>BMCET Campus, Surat</span>
         </div>
         <div className="flex items-center space-x-2 font-mono">
           <span>Countdown:</span>
@@ -169,7 +169,7 @@ const Layout: React.FC = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="mt-1 mr-3 flex-shrink-0 text-secondary">📍</span>
-                  <span>BMEF Campus, VIP Road,<br />Vesu, Surat-395017</span>
+                  <span>BMCET Campus, VIP Road,<br />Vesu, Surat-395017</span>
                 </li>
               </ul>
             </div>
