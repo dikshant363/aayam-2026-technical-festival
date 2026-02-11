@@ -8,7 +8,6 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'About', path: '/about' },
   { label: 'Packages', path: '/packages' },
   { label: 'Events', path: '/events' },
-  { label: 'Gallery', path: '/gallery' },
   { label: 'Team', path: '/team' },
   { label: 'FAQ', path: '/faq' },
   { label: 'Contact', path: '/contact' },
@@ -91,7 +90,7 @@ export const EVENTS_LIST: Event[] = [
   { id: 'c3', title: 'AI Champion', category: 'Computer', description: 'Showcase your innovative AI/ML models and solutions.', image: 'https://picsum.photos/seed/ai/600/400' },
   { id: 'c4', title: 'Error Bug', category: 'Computer', description: 'Find and fix bugs in the provided code snippets.', image: 'https://picsum.photos/seed/bug/600/400' },
   { id: 'c5', title: 'Web Crawler', category: 'Computer', description: 'Web design and development competition.', image: 'https://picsum.photos/seed/web/600/400' },
-  
+
   // Gaming
   { id: 'g1', title: 'Valorant', category: 'Gaming', description: '5v5 Tactical Shooter showdown. Hybrid mode.', image: 'https://picsum.photos/seed/valorant/600/400' },
   { id: 'g2', title: 'BGMI', category: 'Gaming', description: 'Battle Royale mobile gaming tournament.', image: 'https://picsum.photos/seed/bgmi/600/400' },
