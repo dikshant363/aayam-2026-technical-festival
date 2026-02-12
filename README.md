@@ -52,7 +52,7 @@ AAYAM is the annual national-level technical festival featuring 20+ events acros
    npm run dev
    ```
 
-   The application will be available at `http://localhost:5173`.
+   The application will be available at `http://localhost:3000`.
 
 3. **Build for Production**
 
